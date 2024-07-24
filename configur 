@@ -1,0 +1,116 @@
+{
+  "General": {
+    "ModulePath": "/modules",
+    "DefaultPrefix": "!",
+    "BrokerHost": "localhost",
+    "BrokerPort": 3006
+  },
+  "Database": {
+    "client": "mysql",
+    "connection": {
+      "port": 3306,
+      "user": "",
+      "password": "",
+      "database": "stevie",
+      "charset": "utf8mb4_general_ci"
+    },
+    "pool": {
+      "min": 0,
+      "max": 20
+    }
+  },
+  "Cockroach": {
+    "client": "pg",
+    "connection": {
+      "host": "",
+      "port": 26257,
+      "user": "",
+      "password": "",
+      "database": "",
+      "charset": "utf8mb4_general_ci"
+    },
+    "pool": {
+      "min": 0,
+      "max": 20
+    }
+  },
+  "InfluxDB": {
+    "host": "",
+    "database": "",
+    "username": "",
+    "password": ""
+  },
+  "Lang": {
+    "key": "",
+    "Languages": {
+      "default": "en-gb.json",
+      "en": "en-gb.json",
+      "en-gb": "en-gb.json",
+      "en-us": "en-us.json",
+      "fi": "fi.json",
+      "fr": "fr.json",
+      "ar": "ar.json",
+      "fil": "fil.json",
+      "gr": "el.json",
+      "el": "el.json",
+      "zh-cn": "zh-CN.json",
+      "zh": "zh-CN.json",
+      "nl-be": "nl-be.json",
+      "nl": "nl-be.json",
+      "eo": "eo.json",
+      "es": "es.json"
+    }
+  },
+  "Raven": {
+    "DSN": ""
+  },
+  "Discord": {
+    "token": "",
+    "respawn": true,
+    "shards": "auto"
+  },
+  "Modules": [
+    "util",
+    "rabbit",
+    "api",
+    "database",
+    "discord",
+    "config",
+    "lang",
+    "statistics",
+    "redis",
+    "commands",
+    "bans",
+    "lavaqueue",
+    "ocelotworks",
+    "support",
+    "autorespond",
+    "botlists",
+    "tasks",
+    "featureToggle",
+    "interactions",
+    "lavalink"
+  ],
+  "Seasonal": [
+    {
+      "start": "1 October",
+      "end": "5 November",
+      "image": "ocelotbot_halloween.png"
+    },
+    {
+      "start": "1 December",
+      "end": "27 December",
+      "image": "ocelotbot_christmas.png"
+    }
+  ],
+  "Broker": {
+    "Modules": [
+      "shards",
+      "ipc",
+      "http"
+    ],
+    "General": {
+      "ModulePath": "/modules"
+    }
+  }
+}
